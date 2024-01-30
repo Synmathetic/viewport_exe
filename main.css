@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(209, 209, 209);
+}
+
+.navegation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+.navegation ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navegation ul>li {
+    list-style: none;
+}
+
+.navegation ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.loja .sobre-loja {
+    display: flex;
+    font-size: 1.2em;
+    margin-top: 56px;
+}
+
+.loja .sobre-loja img {
+    max-width: 600px;
+    margin-right: 20px;
+    margin-bottom: 2%;
+}
+
+img {
+    max-width: 300px;
+    display: block;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #030303;
+    color: #fff;
+    padding: 16px 0 0;
+    margin-bottom: 56px;
+}
+
+.grid ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.grid img {
+    max-width: 100%;
+}
+
+.grid h2 {
+    padding-bottom: 10px;
+    font-size: 36px;
+    text-decoration: none;
+    border-bottom: 3px solid #000;
+    margin-bottom: 25px;
+}
+
+
+.texto-sobre h2 {
+    padding-bottom: 10px;
+    font-size: 36px;
+    text-decoration: none;
+    border-bottom: 3px solid #000;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background: #01960e;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+nav {
+    display: flex;
+    font-size: 1.5em;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container-flex p {
+    width: 85%;
+}
+
+@media only screen and (min-width: 641px)and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .container-flex p {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .loja {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loja .sobre-loja {
+        display: block;
+    }
+
+    .loja .sobre-loja a img {
+        max-width: 100%;
+    }
+
+    .grid h2 {
+        margin-left: 50px;
+    }
+
+    .grid .container-flex {
+        grid-template-columns: repeat(2, 49%);
+        margin-left: 50px;
+    }
+
+    .loja .sobre-loja img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+    .container-flex li h3 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .menu {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .loja .sobre-loja {
+        display: block;
+        font-size: 1em;
+        margin-top: 48px;
+    }
+
+    .loja .sobre-loja img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+    .grid ul {
+        display: block;
+    }
+
+    .grid h2 {
+        margin-left: 30px;
+    }
+
+    .container-flex li h3 {
+        font-size: 32px;
+    }
+
+    .container-flex li img {
+        margin-left: 30px;
+        max-width: 90%;
+    }
+
+    .container-flex p, h3{
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-left: 30px;
+        width: 90%;
+    }
+}
